@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+:root{
+    --color_w:#fff;
+    --m_color:#f36f21;
+}
+main{
+
+}
+
+/* 메인슬라이드 서식 */
+#mslide{width: 100%; height: 95vh; position: relative; overflow: hidden;}
+#mslide div{position: absolute; width: 100%;}/* absolute 가로크기 필수 */
+#mslide .slide1{z-index: 3;}
+#mslide .slide2{z-index: 2;}
+#mslide .slide3{z-index: 1;}
+#mslide div img{width: 100%;}
+
+/* sns 서식 */
+.s_sns{
+    position: absolute;
+    left: 3%; top: 580px;
+    z-index: 100;
+}
+.s_sns i.fa-brands{
+    font-size: 1.25rem; /* 20px */
+    color: var(--color_w);
+    padding: 6px 8px;
+    border: 1px solid var(--color_w);
+    transition: .3s;
+}
+.s_sns a:hover i.fa-brands{
+    color: var(--m_color);
+    background: var(--color_w);
+}
+
+/* 좌, 우 버튼 서식 */
+#mslide .l_btn, #mslide .r_btn{
+    position: absolute;
+    bottom: 20%; left: 3%;
+    z-index: 500;
+    background: var(--color_w);
+    padding: 6px 0px;
+    cursor: pointer;
+}
+#mslide .r_btn{left: 6%;}
+
+/* 컨트롤 버튼 서식 */
+#mslide .c_btn{
+    position: absolute;
+    right: 1.5%; top: 47%; z-index: 100;
+}
+#mslide .c_btn li{
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: var(--color_w);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.on{
+    background-color: #742406 !important;
+}
+
+/* 뉴스 컨텐츠 서식*/
+#news{
+    width: 1200px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+#news article:first-child{
+    width: 640px;
+}
+#news article:last-child{
+    width: 540px;
+
+}
+#news article h2{font-size: 32px; font-weight: bold; margin-bottom: 20px;}
+#news article h2 span{font-size: 18px; font-weight: lighter; margin-bottom: 10px;}
+#news article h2 span{display: block;}
+
+#news article:last-child > ul > li{
+    width: 350px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#news article:last-child > ul > li{line-height: 30px;}
+#news i.far{color: var(--m_color); margin-right: 10px;}
+
+/* 탭컨텐츠 서식 */
+#tab_con{
+    background: #f1f1f1;
+    padding: 100px 0;
+}
+#tab_con h2{
+    font-size: 32px;
+    padding: 10px 0;
+    font-weight: bold;
+}
+#tab_con > article{
+    width: 1200px; height: 500px;
+    margin: 0 auto;
+    background-image: url('../images/mcon2_7.png');
+    background-repeat: no-repeat;
+    background-position: 600px 150px;
+    background-size: 550px;
+    position: relative;
+}
+/* 탭메뉴 목록 */
+#tab_con > article > ul{
+    display: flex;
+    width: 650px;
+    position: relative;
+    margin-top: 30px;
+}
+#tab_con ul li{margin-right: 10px;}
+#tab_con ul li a{
+    background: #222;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 5px;
+}
+#tab_con ul li a:hover{
+    text-decoration: none;
+}
+#tab_con dl{line-height: 160%;}
+#tab_con dl dt{
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+/* 탭메뉴 클릭시 a에 적용할 서식 */
+.t_on{background: var(--m_color) !important;}
+
+i.fa-caret-down{display: none;}
+
+#tab_con .con{display: none;}
+#tab_con .con1{display: block;}
+#tab_con .con{
+    position: absolute; top: 50px;
+    width: 100%;
+    left: 0;
+}
+#tab_con .con img{
+    width: 80%;
+}
+
+/* 제품소개 */
+#product{
+    background: #ffc845;
+    padding: 100px 0px;
+}
+#product article{
+    width: 1200px; margin: 0 auto;
+}
+#product h2{
+    font-size: 32px;
+    padding: 10px 0;
+    font-weight: bold;
+}
+#product ul{
+    display: flex;
+    justify-content: space-between;
+}
+#product ul li{width: 31%;}
+#product ul li img{width: 100%;}
+#product ul li h3{
+    font-size: 24px; font-weight: bold;
+    border-bottom: 1px solid #e2a551;
+    padding-top: 30px; height: 60px;
+}
+#product ul li p{
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #805a28;;
+}
+
+/* 이벤트 */
+#event{padding: 100px 0px; width: 1200px; margin: 0 auto; position: relative;}
+#event h2{font-size: 32px; padding: 20px 0; font-weight: bold;}
+.e_slide{overflow: hidden;}
+.es_wrap{display: flex; width: 3600px;}
+.es_wrap > div{width: 1200px;}
+.es_wrap > div > a{display: flex; text-decoration: none;}
+#event i.fas{
+    position: absolute; top: 272px;
+    font-size: 30px;
+    padding: 5px 12px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#event i.fa-angle-left{left: -60px;}
+#event i.fa-angle-right{right: -60px;}
+.e_txt{padding: 30px 0px 0px 40px;}
+.e_txt .on1{
+    background: var(--m_color);
+    color: var(--color_w);
+}
+.e_txt span{background: #e4e4e4; padding: 4px 8px;}
+.e_txt h3{font-style: 18px; line-height: 60px; font-weight: bold;}
+.e_txt p{font-style: 16px;}
+
+    
+/* 갤러리 */
+#gallery{
+    background-color: var(--m_color);
+}
+.grid_gallery, #gallery > h2{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#gallery > h2{
+    padding: 30px 0px 20px 0px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* grid gallery */
+.grid_gallery{
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,270px);
+    grid-template-areas: 
+    "g01 g02 g03"
+    "g04 g02 g05"
+    "g06 g07 g08";
+}
+
+.grid_gallery > figure:first-child{grid-area: g01;}
+.grid_gallery > figure:nth-child(2){grid-area: g02;}
+.grid_gallery > figure:nth-child(3){grid-area: g03;}
+.grid_gallery > figure:nth-child(4){grid-area: g04;}
+.grid_gallery > figure:nth-child(5){grid-area: g05;}
+.grid_gallery > figure:nth-child(6){grid-area: g06;}
+.grid_gallery > figure:nth-child(7){grid-area: g07;}
+.grid_gallery > figure:last-child{grid-area: g08;}
+.grid_gallery img{width: 100%;}
+.grid_gallery > figure{position: relative;overflow: hidden;}
+.grid_gallery > figure:hover figcaption{bottom: 0;}
+
+/* 캡션서식 */
+.grid_gallery > figure > figcaption{
+    background-color: #000000;
+    height: 80px;
+    position: absolute;
+    bottom: -80px;
+    width: 100%;
+    transition: .3s;
+}
+figcaption h3{
+    color: var(--m_color);
+    font-size: 20px;
+    padding: 10px 0px 5px 20px;
+    font-weight: bold;
+}
+figcaption p{
+    color: #ffffff;
+    font-size: 16px;
+    padding: 5px 0px 0px 20px;
+}
+figcaption span{
+    font-size: 16px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 5px;
+    float: right;
+    transform: translate(-10px, -14px);
+}

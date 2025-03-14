@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* common.css */
+:root{
+    --main-color:#f36f21;
+    --txt_color1:#fff;
+    --base_txt_color:#333;
+}
+header{
+    width: 100%; height: 150px;
+    position: absolute;
+    z-index: 1000;
+}
+header >h1{
+    width: 300px;
+    position: absolute; top: 40px; left: 3%;
+}
+header h1 img{width: 100%;}
+
+/* toggle버튼 숨기기 */
+#toggle{
+    background: rgba(0, 0, 0, .3);
+    width: 32px; height: 32px;
+    padding: 8px; position: absolute; right: 3%;
+    top: 24px;
+    border: 1px solid var(--txt_color1);
+    cursor: pointer;
+    display: none;
+}
+#toggle span{
+    background: var(--txt_color1);
+    display: inline-block;
+    width: 32px; height: 2px;
+    position: absolute;
+}
+#toggle span:first-child{top: 12px;}
+#toggle span:nth-child(2){top: 22px;}
+#toggle span:last-child{bottom: 12px;}
+
+/* gnb(메인메뉴)서식 */
+.gnb{position: absolute; right: 3%; top: 40px;}
+.gnb > ul{display: flex;}
+.gnb > ul > li{
+    margin: 0 20px; line-height: 40px;
+    position: relative; /* 서브의 부모요소 */
+}
+.gnb > ul > li > a{
+    font-size: 1.1rem; /* 16 * 1.1 = 17.2px */
+    color: var(--txt_color1);
+}
+.gnb > ul > li:last-child > a{
+    background: var(--base_txt_color);
+    padding: 2px 10px;
+    transition: .3s;
+    border: 1px solid var(--base_txt_color);
+}
+.gnb > ul > li:last-child > a:hover{
+    background: var(--txt_color1);
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+/* 서브메뉴 서식 */
+.sub{
+    border: 1px solid #ccc;
+    box-shadow: 0px 1px 1px #ccc;
+    border-radius: 4px;
+    padding: 2px;
+    background: var(--txt_color1);
+    position: absolute; width: 100%;
+    display: none;
+}
+.sub li{text-align: center;}
+.sub li a{
+    font-size: 0.9rem;
+    display: block;
+    line-height: 36px;
+    transition: .5s;
+}
+.sub li:hover a{
+    background-color: var(--main-color);
+    color: var(--txt_color1);
+    text-decoration: none;
+}
+
+/* 서브메뉴 너비 조정 */
+.gnb li:first-child .sub a, .gnb li:nth-child(2) .sub a{
+    padding: 0 10px;
+}
+.gnb li:first-child .sub{
+    width: 150px;
+    left: -45px;
+}
+.gnb li:nth-child(2) .sub{
+    width: 200px;
+    left: -68px;
+}
+.gnb li:nth-child(4) .sub{
+    width: 115px;
+}
+
+main article{
+    /* height: 400px; */
+/*     background-color: /* var(--main-color); */
+}
+
+/* 푸터서식 */
+footer{
+    margin-top: 700px;
+}
+.f_inner{width: 100%; background: var(--base_txt_color);}
+
+.f_inner > nav{width: 1200px; margin: 0 auto;
+    display: flex; padding: 40px 40px;}
+
+.f_inner > nav > dl{margin: 0 30px; line-height: 40px; width: 120px; }
+.f_inner > nav dl:nth-child(2) dd:nth-of-type(2){
+    line-height: 27px;
+}
+.f_inner > nav > dl > dt > a{color: var(--main-color); font-weight: bold; transition: .5s;}
+.f_inner > nav > dl > dt > a:hover{
+    text-decoration: none;
+    color: #2f5ea5ea;
+}
+.f_inner > nav > dl > dd{width: 120px;}
+.f_inner > nav > dl > dd > a{
+    color: #ccc;
+    transition: .5s;
+}
+.f_inner > nav > dl > dd > a:hover{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.f_inner > nav a{color: var(--txt_color1);}
+
+.sns{padding-left: 40px; transition: .5s;}
+.sns > dt{
+    color: var(--txt_color1);
+    font-size: 1.1rem;
+}
+.sns dd a{
+    border: 1px solid rgba(158, 158, 158, 0.3);
+    margin-right: 10px;
+}
+.sns dd a:hover{border-color: var(--main-color);}
+
+.sns dd a:first-child{padding: 5px 12px;}
+.sns dd a:nth-child(2){padding: 5px 10px;}
+.sns dd a:last-child{padding: 5px 8px;}
+.sns dd a:hover{color: var(--main-color);}
+
+.f_copy{
+    width: 100%; height: 72px;
+    background: #202020;
+    line-height: 72px;
+}
+.f_copy a{
+    margin-left: 200px;
+    display: inline-block;
+}
+.f_copy a img{
+    width: 125px;
+}
+.f_copy span{color:#999999;
+    display:inline-block; margin-left: 1250px;
+}
+/* 탑버튼 */
+.t_btn{
+    position: fixed;
+    bottom: 30px; right: 20px;
+    z-index: 1001;
+    display: none; /* 세로 스크롤값 1000px 이상일 때 나오게 */
+}

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미에로화이바 메인페이지</title>
+    <!-- css 초기화 -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    
+    <!-- 기본서식 -->
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+
+    <!-- 공통서식 (상단헤더, 푸터서식) -->
+    <link rel="stylesheet" href="./css/common.css" type="text/css">
+
+    <!-- 메인컨텐츠 서식 -->
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+
+    <!-- 폰트어썸 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!-- 상단 헤더 -->
+    <header>
+        <h1>
+            <a href="index.html" title="메인페이지로 바로가기">
+                <img src="./images/logo2.png" alt="상단로고">
+            </a>
+        </h1>
+
+        <!-- 토글버튼 -->
+        <div id="toggle">
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+        </div>
+
+        <!-- 메인메뉴 -->
+        <nav class="gnb">
+            <ul>
+                <li><a href="#" title="미에로">미에로<i class="fas fa-angle-down"></i></a>
+                    <ul class="sub">
+                        <li><a href="http://nnnyh93.dothome.co.kr/0311/brand.html" title="브랜드 스토리">브랜드 스토리</a></li>
+                        <li><a href="#" title="식이섬유 스토리">식이섬유 스토리</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="제품소개">제품소개<i class="fas fa-angle-down"></i></a>
+                    <ul class="sub">
+                        <li><a href="#" title="미에로화이바">미에로화이바</a></li>
+                        <li><a href="#" title="미에로화이바 스파클링 제로">미에로화이바 스파클링 제로</a></li>
+                        <li><a href="#" title="헬씨올리고">헬씨올리고</a></li>
+                        <li><a href="#" title="헬씨올리고 프로바이오틱스">헬씨올리고 프로바이오틱스</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="미에로스토리">미에로스토리<i class="fas fa-angle-down"></i></a>
+                    <ul class="sub">
+                        <li><a href="#" title="TV광고">TV광고</a></li>
+                        <li><a href="#" title="인쇄광고">인쇄광고</a></li>
+                        <li><a href="#" title="프로모션">프로모션</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="미에로이벤트">미에로이벤트<i class="fas fa-angle-down"></i></a>
+                    <ul class="sub">
+                        <li><a href="http://nnnyh93.dothome.co.kr/bbs/bbs/board.php?bo_table=mi_event" title="진행중인 이벤트">진행중인 이벤트</a></li>
+                        <li><a href="#" title="당첨자 발표">당첨자 발표</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://nnnyh93.dothome.co.kr/bbs/bbs/board.php?bo_table=mi_notice" title="공지사항">공지사항</a></li>
+                <li><a href="https://hyundaipharmshop.com" title="공식쇼핑몰"><i class="fa-solid fa-bag-shopping"></i>공식쇼핑몰</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 서브페이지의 메인영역 -->
+    <main>
+        <!-- 이미지 슬라이드 -->
+        <section id="mslide">
+            <div class="slide slide1">
+                <a href="#" title="">
+                    <img src="./images/visual01.jpg" alt="">
+                </a>
+            </div>
+            <div class="slide slide2">
+                <a href="#" title="">
+                    <img src="./images/visual03.jpg" alt="">
+                </a>
+            </div>
+            <div class="slide slide3">
+                <a href="#" title="">
+                    <img src="./images/visual02.jpg" alt="">
+                </a>
+            </div>
+
+            <!-- sns 아이콘 -->
+            <div class="s_sns">
+                <a href="#" title="페이스북"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#" title="인스타그램"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" title="유튜브"><i class="fa-brands fa-square-youtube"></i></a>
+            </div>
+
+            <!-- 좌,우 버튼 -->
+            <img src="./images/left.png" alt="좌 버튼" class="l_btn">
+            <img src="./images/right.png" alt="우 버튼" class="r_btn">
+
+            <!-- 컨트롤 버튼 -->
+            <ul class="c_btn">
+                <li class="on">&nbsp;</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+            </ul>
+        </section>
+
+        <!-- news 컨텐츠 -->
+        <section id="news">
+            <article>
+                <h2><span>마시는 식이섬유</span>
+                    미에로 화이바
+                </h2>
+                <iframe width="635" height="357" src="https://www.youtube.com/embed/XhhqGWs6oxE" title="Miero Five 미에로파이브 - &#39;Me&amp;U&#39; MV" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </article>
+            <article>
+                <h2><span>미에로의 새로운 소식을 알려드립니다.</span>
+                    미에로화이바 News
+                </h2>
+                <ul>
+                    <li><i class="far fa-circle"></i><a href="http://nnnyh93.dothome.co.kr/bbs/bbs/board.php?bo_table=mi_notice&wr_id=2&page=7" title="">'미에로화이바'와 '삼성헬스' 콜라보 마케팅 '미에로 헬스 서비스' 운영 개시</a></li>
+                    <li><i class="far fa-circle"></i><a href="http://nnnyh93.dothome.co.kr/bbs/bbs/board.php?bo_table=mi_notice&wr_id=2&page=6" title="">현대약품, 전소민과 함께한 '미에로화이바' TV광고 온에어</a></li>
+                    <li><i class="far fa-circle"></i><a href="http://nnnyh93.dothome.co.kr/bbs/bbs/board.php?bo_table=mi_notice&wr_id=2&page=5" title="">빛나는 미모의 미에로화이바 모델 강소라</a></li>
+                    <li><i class="far fa-circle"></i><a href="http://nnnyh93.dothome.co.kr/bbs/bbs/board.php?bo_table=mi_notice&wr_id=2&page=4" title="">PRINKLE과 함께하는 비타민C9금 개그 캠퍼스!</a></li>
+                    <li><i class="far fa-circle"></i><a href="http://nnnyh93.dothome.co.kr/bbs/bbs/board.php?bo_table=mi_notice&wr_id=2&page=3" title="">천고마비의 계절 "먹으면서 운동하자"</a></li>
+                    <li><i class="far fa-circle"></i><a href="http://nnnyh93.dothome.co.kr/bbs/bbs/board.php?bo_table=mi_notice&wr_id=2&page=2" title="">미에로화이바의 빗살무늬 유니크 전략 '먹혀'</a></li>
+                    <li><i class="far fa-circle"></i><a href="http://nnnyh93.dothome.co.kr/bbs/bbs/board.php?bo_table=mi_notice&wr_id=2&page=1" title="">미에로화이바는 지금, 젊은 마케팅으로 회춘 중!</a></li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- 탭컨텐츠 -->
+        <section id="tab_con">
+            <article>
+                <h2>당신이 몰랐던 식이섬유</h2>
+                <ul>
+                    <li>
+                        <a href="#" title="식이섬유란?" class="t_on">식이섬유란?<i class="fas fa-caret-down"></i></a>
+                        <div class="con con1">
+                            <dl>
+                                <dt>식이섬유란?</dt>
+                                <dd>사람의 소화효소로 분해되지 않는 성분, 몸 속의 과다한 양분흡수를 막아주고, 장의 리듬을 조절하며,음식물이 장 속에 머무는 시간을 단축시키는 등 현대 식생활에 꼭 필요한 물질로 제 7의 영양소로 주목 받고 있음</dd>
+                                <dd>&#x203b; 출처 : 파워푸드 슈퍼푸드 사전</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#" title="식이기능">식이기능<i class="fas fa-caret-down"></i></a>
+                        <div class="con con2">
+                            <dl>
+                                <dt>식이섬유 기능</dt>
+                                <dd>1. 배설활동 촉진, 변비 예방</dd>
+                                <dd>2. 대사질환에 효과적</dd>
+                                <dd>3. 콜레스테롤 감소</dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#" title="식이섬유를 섭취하려면?">식이섬유를 섭취하려면?<i class="fas fa-caret-down"></i></a>
+                        <div class="con con3">
+                            <dl>
+                                <dt>식이섬유를 섭취하려면?</dt>
+                                <dd><img src="./images/mcon2_8.png" alt=""></dd>
+                                <dd><img src="./images/mcon2_9.png" alt=""></dd>
+                                <dd><img src="./images/mcon2_10.png" alt=""></dd>                        
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- 제품소개 -->
+        <section id="product">
+            <article>
+                <h2>Miero Fiber</h2>
+                <ul>
+                    <li>
+                        <img src="./images/mcon3_2.png" alt="미에로화이바">
+                        <h3>미에로화이바</h3>
+                        <p>식이섬유가 함유된 몸매관리에 도움을 주는 국민 식이섬유 음료</p>
+                    </li>
+                    <li>
+                        <img src="./images/mcon3_5.png" alt="SPARKLING ZERO SUGAR">
+                        <h3>미에로화이바<br>SPARKLING ZERO SUGAR</h3>
+                        <p>미에로화이바의 맛과 식이섬유는 그대로! 당류는 ZERO! 탄산으로 짜릿하게 즐기는 미에로화이바</p>
+                    </li>
+                    <li>
+                        <img src="./images/mcon3_3.png" alt="헬씨올리고">
+                        <h3>헬씨올리고</h3>
+                        <p>올리고당을 함유하고 있어, 내 몸속의 비피더스 균을 직접 키워주는 장 건강 지킴이</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- 이벤트 슬라이드 -->
+        <section id="event">
+            <h2>미에로화이바 Event</h2>
+            <article class="e_slide">
+                <div class="es_wrap">
+                    <div>
+                        <a href="#" title="">
+                            <img src="./images/event01.png" alt="">
+                            <div class="e_txt">
+                                <span class="on1">진행중</span>
+                                <h3>이벤트 제목</h3>
+                                <p>이벤트 내용과 날짜</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" title="">
+                            <img src="./images/event02.jpg" alt="">
+                            <div class="e_txt">
+                                <span>종료</span>
+                                <h3>이벤트 제목</h3>
+                                <p>이벤트 내용과 날짜</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" title="">
+                            <img src="./images/event03.png" alt="">
+                            <div class="e_txt">
+                                <span>종료</span>
+                                <h3>이벤트 제목</h3>
+                                <p>이벤트 내용과 날짜</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <i class="fas fa-angle-left"></i>
+            <i class="fas fa-angle-right"></i>
+        </section>
+
+        <article>
+            <!-- 배경이미지와 내비게이션 영역 -->
+            <div class="back"></div>
+            <nav></nav>
+
+            <!-- 게시판이 들어가는 영역 -->
+        </article>
+        <!-- 미에로 화이바 갤러리 -->
+        <section id="gallery">
+            <h2>미에로화이바 Girl 스토리</h2>
+            <div class="grid_gallery">
+                <figure>
+                    <img src="./images/mcon5_1.jpg" alt="1번">
+                    <figcaption>
+                        <a href="#" title="">
+                            <h3>TV광고</h3>
+                            <P>2022</P>
+                            <span>영상보기</span>
+                        </a>
+                    </figcaption>
+                </figure>
+    
+                <figure>
+                    <img src="./images/mcon5_3.png" alt="2번">
+                    <figcaption>
+                        <a href="#" title="">
+                            <h3>TV광고</h3>
+                            <P>2022</P>
+                            <span>영상보기</span>
+                        </a>
+                    </figcaption>
+                </figure>
+    
+                <figure>
+                    <img src="./images/mcon5_2.jpg" alt="3번">
+                    <figcaption>
+                        <a href="#" title="">
+                            <h3>TV광고</h3>
+                            <P>2022</P>
+                            <span>영상보기</span>
+                        </a>
+                    </figcaption>
+                </figure>
+    
+                <figure>
+                    <img src="./images/mcon5_3.jpg" alt="4번">
+                    <figcaption>
+                        <a href="#" title="">
+                            <h3>TV광고</h3>
+                            <P>2022</P>
+                            <span>영상보기</span>
+                        </a>
+                    </figcaption>
+                </figure>
+    
+                <figure>
+                    <img src="./images/mcon5_6.jpg" alt="5번">
+                    <figcaption>
+                        <a href="#" title="">
+                            <h3>TV광고</h3>
+                            <P>2022</P>
+                            <span>영상보기</span>
+                        </a>
+                    </figcaption>
+                </figure>
+    
+                <figure>
+                    <img src="./images/mcon5_2.jpg" alt="6번">
+                    <figcaption>
+                        <a href="#" title="">
+                            <h3>TV광고</h3>
+                            <P>2022</P>
+                            <span>영상보기</span>
+                        </a>
+                    </figcaption>
+                </figure>
+    
+                <figure>
+                    <img src="./images/mcon5_7.jpg" alt="7번">
+                    <figcaption>
+                        <a href="#" title="">
+                            <h3>TV광고</h3>
+                            <P>2022</P>
+                            <span>영상보기</span>
+                        </a>
+                    </figcaption>
+                </figure>
+    
+                <figure>
+                    <img src="./images/mcon5_8.jpg" alt="8번">
+                    <figcaption>
+                        <a href="#" title="">
+                            <h3>TV광고</h3>
+                            <P>2022</P>
+                            <span>영상보기</span>
+                        </a>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    
+    <!-- 하단 푸터 -->
+    <footer>
+        <div class="f_inner">
+            <nav>
+                <dl>
+                    <dt><a href="#" title="미에로">미에로</a></dt>
+                    <dd><a href="brand.html" title="브랜드 스토리">브랜드 스토리</a></dd>
+                    <dd><a href="#" title="식이섬유 스토리">식이섬유 스토리</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#" title="제품소개">제품소개</a></dt>
+                    <dd><a href="#" title="미에로화이바">미에로화이바</a></dd>
+                    <dd><a href="#" title="미에로화이바 SPARKING ZERO SUGAR">미에로화이바<br>SPARKING<br>ZERO SUGAR</a></dd>
+                    <dd><a href="#" title="헬씨올리고">헬씨올리고</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#" title="미에로 스토리">미에로 스토리</a></dt>
+                    <dd><a href="#" title="TV광고">TV광고</a></dd>
+                    <dd><a href="#" title="인쇄광고">인쇄광고</a></dd>
+                    <dd><a href="#" title="프로모션">프로모션</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#" title="미에로 이벤트">미에로 이벤트</a></dt>
+                    <dd><a href="http://nnnyh93.dothome.co.kr/bbs/bbs/board.php?bo_table=mi_event" title="진행중인 이벤트">진행중인 이벤트</a></dd>
+                    <dd><a href="#" title="당첨자 발표">당첨자 발표</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="http://nnnyh93.dothome.co.kr/bbs/bbs/board.php?bo_table=mi_notice" title="">공지사항</a></dt>
+                    <dd><a href="3http://nnnyh93.dothome.co.kr/bbs/bbs/board.php?bo_table=mi_notice" title="">News&Notice</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#" title="">현대약품</a></dt>
+                    <dd>&nbsp;</dd>
+                </dl>
+                <dl class="sns">
+                    <dt>Connect with us</dt>
+                    <dd>
+                        <a href="#" title="페이스북"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="인스타그램"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="페이스북"><i class="fab fa-youtube"></i></a>
+                    </dd>
+                </dl>
+            </nav>
+        </div>
+
+        <div class="f_copy">
+            <a href="index.html" title="상단 바로가기"><img src="./images/f_logo.png" alt="하단로고"></a>
+            <span>&copy; 2018 MIERO FIBER . All Rights Reserved.
+            </span>
+        </div>
+    </footer>
+    
+    <div class="t_btn">
+        <a href="index.html" title="탑버튼"><img src="./images/top_up.png" alt="탑버튼"></a>
+    </div>
+    
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //1. 변수선언
+            let mnu = $('.gnb > ul > li > a '); //메인메뉴
+
+            // 슬라이드 이미지 변수
+            let m_img = $('#mslide .slide');
+
+            // 좌, 우 버튼 변수
+            let l_btn = $('#mslide .l_btn'); 
+            let r_btn = $('#mslide .r_btn'); 
+
+            // 컨트롤 버튼 변수
+            let c_btn = $('.c_btn li');
+
+            let n = 0; // 인덱스값 변수 초기값
+
+            //탭메뉴 변수
+            let tmnu = $('#tab_con ul li a');
+
+            //탭메뉴 클릭시 해당 a요소에 .t_on서식을 적용하고 선택안된 a요소는 .t_on서식을 제거한다.
+            tmnu.click(function(e){
+                e.preventDefault(); //새로고침 방지
+                
+                //선택한 a요소에 서식을 적용하고 선택되지 않은 다른 a요소는 서식을 제거한다.
+                $(this).addClass('t_on').parent().siblings().find('a').removeClass('t_on');
+                
+                //선택한 a요소의 형제요소인 .con가 나와야
+                $('.con').hide(); //보이는 컨텐츠 모두 숨기고
+                $(this).next().show(); // 해당 컨텐츠만 나오게 함
+
+                let idx = $(this).parent().index();
+
+                if(idx===2){
+                    $('#tab_con article').css('height','650px');
+                }else{
+                    $('#tab_con article').css('height','500px');
+                }
+
+                /*   $('#tab_con > article > ul > li').eq(2).click(function(){
+                    $('#tab_con > article').css('height','600px');
+                }); */
+            });
+
+            //2. 메인메뉴 클릭시 서브메뉴 보이게 / 보일때 클릭하면 숨김
+            mnu.click(function(){
+                //$('.sub').hide(); // 보이는 서브메뉴는 모두 숨기고
+                //$(this).next('.sub').toggle(); //선택한 메인메뉴의 다음 요소 sub가 보이거나 숨기게 한다.
+
+                //선택한 a요소의 다음 요소인 .sub를 나오거나 숨기게하고 부모요소의 형제 요소인 li태그의 자손 .sub를 숨긴다.
+                $(this).next('.sub').toggle().parent().siblings().find('.sub').hide();
+            });
+
+            //main을 클릭하면 .sub를 숨긴다
+            $('main').click(function(){
+                $('.sub').hide();
+            });
+
+            //메인 슬라이드 컨텐츠 구현
+            //매 3초마다 움직이는 함수
+            function moveRight(){
+                //0, 1, 2...
+                //컨트롤 버튼 서식을 모두 제거하고
+                c_btn.removeClass('on');
+
+                //현재 보이는 이미지를 숨기고
+                $('#mslide .slide').eq(n).fadeOut();
+                //해당 인덱스 번호에 맞는 이미지가 나온다.
+                if(n==2){
+                    n=0;
+                }else{
+                    n++;
+                }
+                //해당 n번째의 이미지가 나와야...
+                $('#mslide .slide').eq(n).fadeIn();
+                // 컨트롤 n번째 버튼에 서식 적용
+                c_btn.eq(n).addClass('on');
+            }
+
+            function moveLeft(){
+                //0, 2, 1...
+                if(n==0){
+                    n=2;
+                }else{
+                    n--;
+                }
+                //해당 n번째의 이미지가 나와야...
+                $('#mslide .slide').eq(n).fadeIn();
+                // 컨트롤 n번째 버튼에 서식 적용
+                c_btn.eq(n).addClass('on');
+            }
+            //시간객체를 활용하여 3초마다 moveRight함수 호출
+            let Timer = setInterval(moveRight, 3000);
+
+            //왼쪽 방향버튼을 클릭시 moveLeft함수 호출
+            l_btn.click(function(){
+                moveLeft();
+            });
+
+            //오른쪽 방향버튼을 클릭시 moveRight함수 호출
+            r_btn.click(function(){
+                moveRight();
+            });
+
+            //좌, 우 버튼에 마우스 올리면 시간을 제거해서 움직임 멈추게하고
+            $('#mslide .l_btn, #mslide .r_btn, #mslide .c_btn').hover(function(){
+                clearInterval(Timer);
+            },function(){ //그렇지 않으면 다시 움직이게
+                clearInterval(Timer);
+                Timer = setInterval(moveRight,3000);
+            });
+
+            //컨트롤 버튼 클릭시 해당 이미지 나오게하기
+            c_btn.click(function(){
+                clearInterval(Timer); //시간을 제거하여 멈추게
+
+                n = $(this).index(); // ??번째 값을 변수에 담는다
+                console.log(n);
+
+                $('#mslide .slide').fadeOut(); //현재 슬라이드 숨기고
+                $('#mslide .slide').eq(n).fadeIn(); //n번째 슬라이드가 나오게
+
+                c_btn.removeClass('on');
+                $(this).addClass('on');
+            });
+
+            /* const eslide = $('.es_wrap');
+            const l_btn2 = $('.e_slide i.fa-angle-left');
+            const r_btn2 = $('.e_slide i.fa-angle-right');
+
+            let v = 0;
+
+            $('es_wrap > div:last-child').insertBefore('es_wrap > div:first-child');
+            eslide.css('margin-left','-100%');
+
+            function e_moveSlide(){
+                eslide.stop().animate({'margin-left':'-200%'},500, function(){
+                    $('.e_slide div:first-child').insertAfter('.e_slide div:last-child');
+                    eslide.css('margin-left','-100%');
+                });
+                if(v==3){
+                    v=0;
+                }else{
+                    v++;
+                }
+                e_count(v);
+            }
+
+            function e_moveSlide2(){
+                eslide.stop().animate({'margin-left':'0'},500, function(){
+                    $('.e_slide div:last-child').insertBefore('.e_slide div:first-child');
+                    eslide.css('margin-left','-100%');
+                });
+                if(v==0){
+                    v=3;
+                }else{
+                    v--;
+                }
+                e_count(v);
+            }
+
+            let e_Timer = setInterval(e_moveSlide2, 3000);
+
+            l_btn2.click(function(){
+                e_moveSlide();
+            });
+            r_btn2.click(function(){
+                e_moveSlide2();
+            });  */
+
+            const  eslide = $('.es_wrap'); //3200px 이미지 3개 감싸는 부모요소
+            const es_lbtn = $('#event i.fa-angle-left');
+            const es_rbtn = $('#event i.fa-angle-right');
+
+            // 1번 슬라이드의 앞에 3번을 배치
+            $('.es_wrap > div:last-child').insertBefore('.es_wrap > div:first-child');
+
+            //왼쪽으로 1200px 이동하여 1번이 가운데 배치 되도록
+            eslide.css('margin-left','-100%');
+
+            //moveleft 함수
+            function e_moveLeft(){
+                eslide.animate({'margin-left':'-200%'},500, function(){
+                    $('.es_wrap > div:first-child').insertAfter('.es_wrap > div:last-child');
+                    eslide.css('margin-left','-100%');
+                });
+            }
+
+            //시간객체를 사용하여 4초마다 움직이도록 한다.
+            let Timer2 = setInterval(e_moveLeft,4000);
+            
+            //moveright 함수
+            function e_moveRight(){
+                eslide.animate({'margin-left':'0px'},500, function(){
+                    $('.es_wrap > div:last-child').insertAfter('.es_wrap > div:first-child');
+                    eslide.css('margin-left','-100%');
+                });
+            }
+
+            //좌측버튼 클릭시
+            es_lbtn.click(function(){
+                clearInterval(Timer2);
+                e_moveLeft();
+            });
+            es_rbtn.click(function(){
+                clearInterval(Timer2);
+                e_moveRight();
+            });
+
+            $('#event i.fas').mouseenter(function(){
+                clearInterval(Timer2);
+            });
+
+            //좌, 우 버튼 마우스 아웃시 다시 시간을 생성해서 움직이게
+            $('#event i.fas').mouseleave(function(){
+                clearInterval(Timer2);
+                Timer2 = setInterval(e_moveLeft, 4000);
+            });
+        });
+    </script>
+</body>
+</html>
